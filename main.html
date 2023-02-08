@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The band</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
 </head>
@@ -12,19 +12,19 @@
     <div id="main">
         <div id="header">
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
 
                     </ul>
@@ -44,7 +44,7 @@
          
         <div id="content">
             <!-- about section -->
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="section-heading">THE BAND</h2>
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">
@@ -70,8 +70,9 @@
                     <div class="clear"></div>
                 </div>
             </div>
+            <!-- tour section -->
 
-                <div class="tour-section">
+                <div id="tour" class="tour-section">
                     <div class="content-section">
                         <h2 class="section-heading text-white">TOUR DATES</h2>
                         <p class="section-sub-heading text-white">Remember to book your tickets!</p>
@@ -88,7 +89,7 @@
                                     <h3 class="place-heading">New York</h3>
                                     <p class="place-times">Fri 27 Nov 2016</p>
                                     <p class="place-decription">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button  class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                    <button  class="btn js-buy-ticket">Buy Tickets</button>
                                 </div>
                                 
                             </div>
@@ -100,7 +101,7 @@
                                     <h3 class="place-heading">Paris</h3>
                                     <p class="place-times">Sat 28 Nov 2016</p>
                                     <p class="place-decription">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button  class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                    <button  class="btn js-buy-ticket">Buy Tickets</button>
                                 </div>
                                 
                             </div>
@@ -112,21 +113,57 @@
                                     <h3 class="place-heading">San Francisco</h3>
                                     <p class="place-times">Sun 29 Nov 2016</p>
                                     <p class="place-decription">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button  class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                    <button  class="btn js-buy-ticket">Buy Tickets</button>
                                 </div>
                                 
                             </div>
                          </div>
                        
                     </div>
+                    <div class="modal">
+                        <div class="modal-container">
+                            <div class="modal-close">
+                                <i class="ti-close"></i>
+                
+                            </div>
+                            <div class="modal-header">
+                                <i class="modal-heading-icon ti-bag"></i>
+                                Tickets
+                            </div>
+                            <div class="modal-body">
+                                <label for="ticket-quantity" class="modal-label">
+                                    <i class="ti-shopping-cart"></i>
+                                    Tickets, $15 per person
+                                </label>
+                                <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many? ">
+                
+                                <label for="ticket-email" class="modal-label">
+                                    <i class="ti-user"></i>
+                                    Send To
+                                </label>
+                                <input id="ticket-email" type="text" class="modal-input" placeholder="Enter email ">
+                
+                                <button id="buy-tickets">
+                                    Pay 
+                                    <i class="ti-check"></i>
+                                </button>
+                            </div>
+                
+                           <div class="modal-footer">
+                            <p class="modal-help">Need <a href="">help?</a></p>
+                           </div>
+                
+                        </div>
+                    </div>
                 </div>
                       
                 
-                <!-- tour section -->
+                
+                
            
 
-            <!-- contact section -->
-            <div class="content-section">
+             <!--Begin: contact section -->
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
 
@@ -135,70 +172,51 @@
                         <p><i class="ti-location-pin"></i>Chicago, US </p>
                         <p><i class="ti-mobile"></i>Phone: +00 151515</p>
                         <p><i class="ti-email"></i>Email: mail@mail.com</p>
-
-   
-                    
                     </div>
+
+
                     <div class="column column-half contact-form">
                     <form action="">
                         <div class="row Name-email-wp">
                             <div class="column column-half">
-                                <input type="text" placeholder="Name" name="" id="" class="form-control">
+                                <input type="text" placeholder="Name" required name="" id="" class="form-control">
                             </div>
                             <div class="column column-half">
-                                <input type="email" placeholder="Email" name="" id="" class="form-control">
+                                <input type="email" placeholder="Email" required name="" id="" class="form-control">
                             </div>
                         </div>
                         <div class="row mt-8">
                             <div class="column column-full">
-                                <input type="text" placeholder="Message" name="" id="" class="form-control ">
+                                <input type="text" placeholder="Message" required name="" id="" class="form-control ">
                             </div>
                         </div>
-                        <input  type="submit" value="SEND"> 
+                        <input class="btn pull-right mt-16"  type="submit" value="SEND"> 
                     </form>
                     </div>
                 </div>    
+            </div>
+            <!--End: contact section --> 
 
+            <div class="map-section">
+                <img src="/assets/img/map.jpg" alt="Map">
+            </div>
+
+
+        </div>    
         <div id="footer">
-            
+            <div class="social-list">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-yahoo"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
         </div>
 
     </div>
 
-    <div class="modal">
-        <div class="modal-container">
-            <div class="modal-close">
-                <i class="ti-close"></i>
-
-            </div>
-            <div class="modal-header">
-                <i class="modal-heading-icon ti-bag"></i>
-                Tickets
-            </div>
-            <div class="modal-body">
-                <label for="ticket-quantity" class="modal-label">
-                    <i class="ti-shopping-cart"></i>
-                    Tickets, $15 per person
-                </label>
-                <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many? ">
-
-                <label for="ticket-email" class="modal-label">
-                    <i class="ti-user"></i>
-                    Send To
-                </label>
-                <input id="ticket-email" type="text" class="modal-input" placeholder="Enter email ">
-
-                <button id="buy-tickets">
-                    Pay 
-                    <i class="ti-check"></i>
-                </button>
-            </div>
-
-           <div class="modal-footer">
-            <p class="modal-help">Need <a href="">help?</a></p>
-           </div>
-
-        </div>
-    </div>
+    
 </body>
 </html>

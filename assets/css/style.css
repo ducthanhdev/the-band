@@ -5,6 +5,7 @@
  } 
 
  html{
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
  }
 
@@ -57,6 +58,31 @@
  .mt-8 {
     margin-top: 8px !important;
  }
+
+
+ .mt-16 {
+    margin-top: 16px !important;
+ }
+
+.pull-right{
+    float: right !important;
+}
+
+ .btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
 
 
 /* main */
@@ -187,7 +213,7 @@
 
 #content .content-section{
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto ;
      
@@ -279,7 +305,6 @@
 
 .place-list{
     margin-top: 32px;
-    margin-bottom: 48px;
 }
 
 .place-img{
@@ -315,59 +340,6 @@
 
 .place-decription{
     margin-top: 15px;
-}
-
-.place-buy-btn{
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 11px 16px;
-    display: inline-block;
-    margin-top: 15px;
-}
-
-.place-buy-btn:hover{
-    color: #000;
-    background-color: #ccc;
-}
-
-/* contact form */
-.contact-content {
-    margin: 48px;
-}
-
-.contact-info{
-    font-size: 18px; 
-    line-height: 1.5;
-}
-
-.contact-info i[class*="ti-"]{
-    width: 30px;
-    display: inline-block;
-}
-
-.contact-form {
-    font-size: 15px; 
-}
-
-.contact-form .form-control {
-    padding: 10px;
-    border: 1px solid #ccc;
-    width: 100%;
-    border-radius: 5px;
-    
-}
-
-.Name-email-wp {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-/* footer section */
-#footer{
-
 }
 
 .modal {
@@ -465,4 +437,72 @@
 
 .modal-footer a {
     color: #2196F3;
+}
+
+
+/* contact form */
+.contact-content {
+    margin: 48px;
+}
+
+.contact-info{
+    font-size: 18px; 
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px; 
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+.Name-email-wp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Map-section */
+.map-section img {
+    width: 100%;
+}
+
+
+/* footer section */
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .social-list a{
+    color: rgba(0 , 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .social-list a:hover{
+    color: rgba(0 , 0, 0, 0.4);
+}
+
+#footer .copyright{
+    margin-top: 15px;
+    color: rgba(0 , 0, 0, 0.6);
+}
+
+#footer .copyright a{
+    color: rgba(0 , 0, 0, 0.6);
 }
