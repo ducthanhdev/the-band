@@ -27,10 +27,18 @@
     margin-right: -8px;
  }
 
+
+ .row::after {
+    content: "";
+    display: block;
+    clear: both;
+ }
+
  .column{
     float: left;
     padding-left: 8px;
     padding-right: 8px;
+    
  }
 
  .column-half  { 
@@ -40,6 +48,16 @@
  .column-third  { 
     width: 33.3333%;
  }
+
+
+ .column-full  { 
+    width: 100%;
+ }
+
+ .mt-8 {
+    margin-top: 8px !important;
+ }
+
 
 /* main */
 
@@ -313,6 +331,41 @@
     background-color: #ccc;
 }
 
+/* contact form */
+.contact-content {
+    margin: 48px;
+}
+
+.contact-info{
+    font-size: 18px; 
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px; 
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+.Name-email-wp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* footer section */
 #footer{
 
 }
