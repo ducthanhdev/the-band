@@ -95,10 +95,11 @@
     left: 0;
     right: 0;
     z-index: 1;
+    overflow: hidden;
 
 }
 
-#nav { 
+#nav  { 
    display: inline-block;
 }
 #nav, .subnav{
@@ -159,9 +160,10 @@
 
 #nav .subnav li:hover {
     color: #000;
+    
     background-color: #ccc;
 }
-
+.mobile-menu-btn,
 .search-btn{
   float: right;
   color: #fff; 
@@ -169,14 +171,21 @@
   line-height: 46px;
   padding: 0 24px;
   cursor: pointer;
-
 }
 
-.search-btn:hover{
+#header .search-btn:hover{
     background-color: red;
     transition: background-color linear .2s;
 }
 
+#header .mobile-menu-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+
+
+#header .menu-icon,
 #header .seach-icon{
     color: #fff;
     font-size: 20px;
@@ -213,11 +222,12 @@
 
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto ;
-     
-
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading {
