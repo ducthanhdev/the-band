@@ -1,7 +1,11 @@
 @media (max-width: 740px) {
     /* mobile */
+    #nav > li {
+        display: block;
+    }
+
     #nav {
-        display: inline-grid;
+      display: inline-grid;
     }
 
     .search-btn {
@@ -11,10 +15,16 @@
 }
  @media (min-width: 740px) and (max-width: 1023px){ 
     /* tablet */
+    .mobile-menu-btn{
+      display: none;
+    }
   }
 
   @media (min-width: 1024px) { 
     /* pc  */
+    .mobile-menu-btn{
+      display: none;
+    }
   }
  
 
