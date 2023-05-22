@@ -4,8 +4,23 @@
         display: block;
     }
 
+   #header{
+    overflow: hidden;
+   }
+
+   iframe {
+    height: 300px;
+   }
+
     #nav {
-      display: inline-grid;
+      display: block;
+    }
+
+    #mobile-menu {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: auto;
     }
 
     .search-btn {
