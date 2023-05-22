@@ -8,6 +8,13 @@
     overflow: hidden;
    }
 
+   .place-times{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+   }
+
    iframe {
     height: 300px;
    }
